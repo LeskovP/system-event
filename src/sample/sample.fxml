@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="256.0" prefWidth="720.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="385.0" prefWidth="723.0" style="-fx-background-color: #696969;">
+            <children>
+                <VBox fx:id="detectDevices" layoutX="14.0" layoutY="14.0" prefHeight="202.0" prefWidth="214.0" style="-fx-background-color: #696969; -fx-border-color: #FFD700; -fx-border-width: 4;">
+                    <children>
+                        <Label fx:id="thermostat" alignment="CENTER" prefHeight="49.0" prefWidth="206.0" style="-fx-border-width: 4; -fx-border-color: #696969; -fx-background-color: #696969;" text="Термостат" textFill="GOLD">
+                            <font>
+                                <Font name="HP Simplified" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="49.0" prefWidth="206.0" style="-fx-border-width: 4; -fx-border-color: #696969; -fx-background-color: #696969;" text="Свет" textFill="GOLD">
+                            <font>
+                                <Font name="HP Simplified" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="49.0" prefWidth="206.0" style="-fx-border-width: 4; -fx-border-color: #696969; -fx-background-color: #696969;" text="Система полива" textFill="GOLD">
+                            <font>
+                                <Font name="HP Simplified" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="49.0" prefWidth="206.0" style="-fx-border-width: 4; -fx-background-color: #696969; -fx-border-color: #696969;" text="Ветродуй" textFill="GOLD">
+                            <font>
+                                <Font name="HP Simplified" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <Button fx:id="modeA" alignment="CENTER_RIGHT" layoutX="402.0" layoutY="14.0" mnemonicParsing="false" onAction="#runA" onMouseExited="#deactiveA" onMouseMoved="#activeA" prefHeight="50.0" prefWidth="311.0" style="-fx-background-color: #696969; -fx-border-width: 4; -fx-border-color: #696969;" text="Запустить систему в режиме &quot;Баклажан&quot;" textFill="GOLD">
+                    <font>
+                        <Font name="HP Simplified" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="modeB" alignment="CENTER_RIGHT" layoutX="402.0" layoutY="85.0" mnemonicParsing="false" onAction="#runB" onMouseExited="#deactiveB" onMouseMoved="#activeB" prefHeight="50.0" prefWidth="311.0" style="-fx-background-color: #696969; -fx-border-width: 4; -fx-border-color: #696969;" text="Запустить систему в режиме &quot;Огурцы&quot;" textFill="GOLD">
+                    <font>
+                        <Font name="HP Simplified" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="modeC" alignment="CENTER_RIGHT" layoutX="402.0" layoutY="158.0" mnemonicParsing="false" onAction="#runC" onMouseExited="#deactiveC" onMouseMoved="#activeC" prefHeight="50.0" prefWidth="311.0" style="-fx-background-color: #696969; -fx-border-width: 4; -fx-border-color: #696969;" text="Запустить систему в режиме &quot;Помидоры&quot;" textFill="GOLD">
+                    <font>
+                        <Font name="HP Simplified" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="modeD" alignment="CENTER_RIGHT" layoutX="402.0" layoutY="230.0" mnemonicParsing="false" onAction="#runD" onMouseExited="#deactiveD" onMouseMoved="#activeD" prefHeight="50.0" prefWidth="311.0" style="-fx-background-color: #696969; -fx-border-width: 4; -fx-border-color: #696969;" text="Запустить систему в режиме &quot;Капуста&quot;" textFill="GOLD">
+                    <font>
+                        <Font name="HP Simplified" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="modeStop" alignment="CENTER_RIGHT" layoutX="402.0" layoutY="302.0" mnemonicParsing="false" onAction="#systemStop" onMouseExited="#deactiveStop" onMouseMoved="#activeStop" prefHeight="50.0" prefWidth="311.0" style="-fx-background-color: #696969; -fx-border-width: 4; -fx-border-color: #696969;" text="Остановить систему" textFill="GOLD">
+                    <font>
+                        <Font name="HP Simplified" size="15.0" />
+                    </font>
+                </Button>
+            <Label fx:id="message" layoutX="14.0" layoutY="313.0" prefHeight="28.0" prefWidth="378.0" text="Система отключена" textFill="GOLD">
+               <font>
+                  <Font name="HP Simplified" size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
